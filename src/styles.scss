@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+//Bootstrap 4
+@import "./../node_modules/bootstrap/scss/functions";
+@import "./../node_modules/bootstrap/scss/variables";
+@import "./../node_modules/bootstrap/scss/mixins";
+@import "./../node_modules/bootstrap/scss/root";
+@import "./../node_modules/bootstrap/scss/reboot";
+@import "./../node_modules/bootstrap/scss/grid";
+@import "./../node_modules/bootstrap/scss/navbar";
+@import "./../node_modules/bootstrap/scss/modal";
+@import "./../node_modules/bootstrap/scss/transitions";
+@import "./../node_modules/bootstrap/scss/utilities";
+
+//Importar Variables
+@import "./sass/base/variables.scss"; 
+
+//Importar estilos globales
+@import "./sass/base/base.scss";
+@import "./sass/base/global.scss";
+
+//Importar componentes
+@import "./sass/components/buttons.scss";
+@import "./sass/components/boxes.scss";
+
+//Importar layout
+@import "./sass/layout/header.scss";
+@import "./sass/layout/home.scss";
+@import "./sass/layout/dashboard.scss";

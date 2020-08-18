@@ -1,0 +1,31 @@
+/*-- global --*/
+.txt {
+	&-blanco {
+		color: $blanco;
+	}
+	&-negro {
+		color: $negro;
+	}
+}
+
+.bg {
+	&-negro {
+		background-color: $negro;
+	}
+	&-naranja {
+		background-color: $naranja;
+	}
+	&-azul {
+		background-color: $azul_claro;		
+	}
+	&-img {
+		background-image: url('./../../assets/images/bg-ppal.png');
+		background-size: cover;
+		background-repeat: no-repeat;		
+		background-position: top center;
+
+		@include media-breakpoint-up(md) {
+			background-position: top right;
+		}
+	}
+}

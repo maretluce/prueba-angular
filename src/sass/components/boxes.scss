@@ -1,0 +1,99 @@
+.c-box-user {
+    margin-bottom: 40px;    
+    padding: 0 20px;
+    text-align: center;
+    color: $blanco;
+
+    .imagen {
+        border-radius: 50%;
+        height: 200px;       
+        margin-bottom: 20px; 
+        overflow: hidden;        
+        width: 200px;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}
+
+.c-box-dashb {
+	margin-bottom: 40px;    
+    padding: 0 20px;
+    text-align: center;
+	color: $blanco;
+	max-width: 250px;
+	
+	.imagen {
+		margin: 0 auto 20px;    
+        width: 200px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.c-imagentxt {
+    position: relative;
+
+    .imagen {
+		width: 80%;
+		
+		@include media-breakpoint-up(md) {			
+			width: 70%;
+		}
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .texto {
+		padding: 20px 0 40px;
+		width: 80%;
+        
+        @include media-breakpoint-up(md) {
+			position: absolute;
+			top: 35%;
+			width: 35%;
+			padding: 0;
+		}
+		
+		h2 {
+			margin-bottom: 20px;
+		}
+	}
+	
+	&-right {
+		.texto {
+			text-align: left;
+
+			@include media-breakpoint-up(md) {
+				left: 0;
+			}
+		}
+
+		.imagen {
+			margin-left: auto;
+		}
+	}
+
+	&-left {
+		.texto {
+			text-align: right;
+			margin-left: auto;
+
+			@include media-breakpoint-up(md) {
+				right: 0;
+			}
+		}
+
+		.imagen {
+			margin-right: auto;
+		}
+	}
+
+}

@@ -1,0 +1,77 @@
+<main>
+    <div class="bg-azul bg-img">
+        <!-- Reframing Economy -->
+        <section class="l-intro">
+            <div class="container h-100">
+                <div class="row justify-content-center h-100">
+                    <div class="col-12 col-sm-6 col-lg-6">
+                        <div class="d-flex h-100 flex-column align-items-center justify-content-center">
+                            <h1>Reframing<br>Economy</h1>
+                            <p>Un trabajo de Wunderman Thompson que busca entender cómo las emociones de los colombianos cambian sus comportamientos y afectan la intensión de consumo.</p>
+                            <div class="btn-base btn-naranja mt-5">
+                                <a href="dashboard">
+                                    <span class="h5">Ir al Dashboard</span>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- que es -->
+        <section class="l-doble">
+            <div class="container h-100">
+                <div class="c-imagentxt c-imagentxt-right">                        
+                    <div class="texto">
+                        <h2>¿Qué es?</h2>
+                        <p>Nuestro proyecto busca traquear esas emociones basándonos en el modelo de Robert Plutchik´s, que trabaja con las 8 emociones centrales y cómo su combinación lleva a nuevas emociones.</p>
+                        <div class="mt-3">
+                            <a href="">Ver Teoría</a>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="./../../../assets/images/quees.png" alt="que es" class="d-none d-md-block">
+                        <img src="./../../../assets/images/quees-mb.png" alt="que es" class="d-md-none">
+                    </div>                     
+                </div>
+            </div>
+        </section>        
+    </div>
+    <div class="bg-azul">
+        <!-- por que -->
+        <section class="l-doble">
+            <div class="container h-100">
+                <div class="c-imagentxt c-imagentxt-left">                        
+                    <div class="texto">
+                        <h2>¿Por qué?</h2>
+                        <p>El significado del valor esta cambiando los productos y servicios, basicamente porque ese valor esta siendo dominado por emociones modificando las prioridades y valoraciones de los colombianos.</p>
+                    </div>
+                    <div class="imagen">
+                        <img src="./../../../assets/images/porque.png" alt="por que" class="d-none d-md-block">
+                        <img src="./../../../assets/images/porque-mb.png" alt="por que" class="d-md-none">
+                    </div>                     
+                </div>
+            </div>
+        </section>
+    </div>    
+    <section class="l-usuarios bg-naranja">
+        <div class="container">
+            <h2 class="text-center mb-5">¿Cómo esto ayuda a las marcas?</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div *ngFor='let user of users'> 
+                            <div class="c-box-user">
+                                <div class="imagen">
+                                    <img [src]="user.avatar">
+                                </div>
+                                <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+                                <p>{{ user.email }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+</main>
